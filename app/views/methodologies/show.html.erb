@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Meth number:</b>
+  <%= @methodology.meth_number %>
+</p>
+
+<p>
+  <b>Meth title:</b>
+  <%= @methodology.meth_title %>
+</p>
+
+<p>
+  <b>Meth version:</b>
+  <%= @methodology.meth_version %>
+</p>
+
+<p>
+  <b>Meth active:</b>
+  <%= @methodology.meth_active %>
+</p>
+
+
+<%= link_to 'Edit', edit_methodology_path(@methodology) %> |
+<%= link_to 'Back', methodologies_path %>
