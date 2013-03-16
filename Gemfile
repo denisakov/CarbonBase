@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.7'
 gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
@@ -13,10 +12,8 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '3.2.4'
   gem 'sass-rails',   '3.2.5'
   gem 'coffee-rails', '3.2.2'
-
   gem 'hirb',	'0.7.1'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -26,20 +23,7 @@ end
 
 gem 'jquery-rails', '2.0.2'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
 group :production do
 	gem 'pg', '0.12.2'
 end
 
-# To use debugger
-# gem 'debugger'
