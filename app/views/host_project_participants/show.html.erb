@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @host_project_participant.project_id %>
+</p>
+
+<p>
+  <b>Entity:</b>
+  <%= @host_project_participant.entity_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_host_project_participant_path(@host_project_participant) %> |
+<%= link_to 'Back', host_project_participants_path %>

@@ -1,4 +1,23 @@
 Carbonbase::Application.routes.draw do
+  
+  resources :consultants
+
+  resources :designated_operational_entities
+
+  resources :designated_national_authorities
+
+  resources :annex1_project_participants
+
+  resources :host_project_participants
+
+  resources :entities
+
+  resources :methodologies
+
+  resources :locations
+
+  resources :projects
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

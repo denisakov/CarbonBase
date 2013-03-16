@@ -1,0 +1,29 @@
+<h1>Listing methodologies</h1>
+
+<table>
+  <tr>
+    <th>Meth number</th>
+    <th>Meth title</th>
+    <th>Meth version</th>
+    <th>Meth active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @methodologies.each do |methodology| %>
+  <tr>
+    <td><%= methodology.meth_number %></td>
+    <td><%= methodology.meth_title %></td>
+    <td><%= methodology.meth_version %></td>
+    <td><%= methodology.meth_active %></td>
+    <td><%= link_to 'Show', methodology %></td>
+    <td><%= link_to 'Edit', edit_methodology_path(methodology) %></td>
+    <td><%= link_to 'Destroy', methodology, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Methodology', new_methodology_path %>

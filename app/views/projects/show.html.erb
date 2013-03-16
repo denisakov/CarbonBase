@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>CDM ID:</b>
+  <%= @project.cdm_id %>
+</p>
+
+<p>
+  <b>Reference No:</b>
+  <%= @project.ref %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @project.title %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @project.status %>
+</p>
+
+<p>
+  <b>Methodology:</b>
+  <%= @project.methodology %>
+</p>
+
+<p>
+  <b>Project type:</b>
+  <%= @project.pr_type %>
+</p>
+
+<p>
+  <b>Sub-type:</b>
+  <%= @project.sub_type %>
+</p>
+
+<p>
+  <b>Registration:</b>
+  <%= @project.reg %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @project.pr_url %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

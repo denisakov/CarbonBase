@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @designated_national_authority.project_id %>
+</p>
+
+<p>
+  <b>Entity:</b>
+  <%= @designated_national_authority.entity_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_designated_national_authority_path(@designated_national_authority) %> |
+<%= link_to 'Back', designated_national_authorities_path %>

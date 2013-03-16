@@ -1,0 +1,39 @@
+<h1>Listing projects</h1>
+
+<table>
+  <tr>
+    <th>CDM ID</th>
+    <th>Reference No.</th>
+    <th>Title</th>
+    <th>Status</th>
+    <th>Methodology</th>
+    <th>Type</th>
+    <th>Sub-type</th>
+    <th>Registration date</th>
+	<th>Link</th>
+	<th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= project.cdm_id %></td>
+    <td><%= project.ref %></td>
+    <td><%= project.title %></td>
+    <td><%= project.status %></td>
+    <td><%= project.methodology %></td>
+    <td><%= project.pr_type %></td>
+    <td><%= project.sub_type %></td>
+    <td><%= project.reg %></td>
+    <td><%= project.pr_url %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project', new_project_path %>

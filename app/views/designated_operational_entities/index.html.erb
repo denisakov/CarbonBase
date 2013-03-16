@@ -1,0 +1,25 @@
+<h1>Listing designated_operational_entities</h1>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Entity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @designated_operational_entities.each do |designated_operational_entity| %>
+  <tr>
+    <td><%= designated_operational_entity.project_id %></td>
+    <td><%= designated_operational_entity.entity_id %></td>
+    <td><%= link_to 'Show', designated_operational_entity %></td>
+    <td><%= link_to 'Edit', edit_designated_operational_entity_path(designated_operational_entity) %></td>
+    <td><%= link_to 'Destroy', designated_operational_entity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Designated operational entity', new_designated_operational_entity_path %>

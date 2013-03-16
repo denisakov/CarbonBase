@@ -2,11 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 group :development do
 	gem 'sqlite3', '1.3.5'
+	gem 'rspec-rails', '2.10.0'
 end
 
 # Gems used only for assets and not required
@@ -14,26 +12,23 @@ end
 group :assets do
   gem 'sass-rails',   '3.2.4'
   gem 'coffee-rails', '3.2.2'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '1.2.3'
 end
 
+gem 'hirb', :require => nil
+
 gem 'jquery-rails', '2.0.2'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'data_active', '~> 0.0.4'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+gem 'nokogiri', '1.5.5'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'roo', '1.2.3'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+group :test do
+  gem 'capybara', '1.1.2'
+end
 
-# To use debugger
-# gem 'debugger'
+group :production do
+  gem 'pg', '0.12.2'
+end

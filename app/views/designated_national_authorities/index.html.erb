@@ -1,0 +1,25 @@
+<h1>Listing designated_national_authorities</h1>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Entity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @designated_national_authorities.each do |designated_national_authority| %>
+  <tr>
+    <td><%= designated_national_authority.project_id %></td>
+    <td><%= designated_national_authority.entity_id %></td>
+    <td><%= link_to 'Show', designated_national_authority %></td>
+    <td><%= link_to 'Edit', edit_designated_national_authority_path(designated_national_authority) %></td>
+    <td><%= link_to 'Destroy', designated_national_authority, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Designated national authority', new_designated_national_authority_path %>
